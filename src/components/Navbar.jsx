@@ -8,7 +8,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed bottom-5 left-1/2 transform -translate-x-1/2 flex items-center gap-3 overlay bg-opacity-80 backdrop-blur-lg px-6 py-3 rounded-full shadow-lg z-50"
+      className="fixed bottom-5 left-1/2 transform -translate-x-1/2 flex items-center gap-3 overlay bg-opacity-80 backdrop-blur-lg px-6 py-3 rounded-full shadow-lg z-10"
     >
       {/* Logo */}
       {/* <div className="text-black font-bold text-lg px-4 py-2 bg-white rounded-full">K</div> */}

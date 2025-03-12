@@ -21,7 +21,7 @@ const CustomCursor = () => {
     hoverTargets.forEach((target) => {
       target.addEventListener("mouseenter", () => {
         setCursorSize(40);
-        setCursorColor("rgba(0, 0,0 , 0.3)");
+        setCursorColor("rgba(20,100,89 , 0.4)");
       });
       target.addEventListener("mouseleave", () => {
         setCursorSize(10);
@@ -39,7 +39,7 @@ const CustomCursor = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 pointer-events-none mix-blend-difference z-50000"
+      className="fixed top-0 left-0 pointer-events-none mix-blend-difference z-5000"
       style={{
         width: cursorSize,
         height: cursorSize,

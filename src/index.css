@@ -1,18 +1,21 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Dynalight&family=Quicksand:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 
 
 body {
     @apply bg-black;
-    font-family: "Nunito", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
   }
 
+  .fontDyna{
+    font-family: "Dynalight", cursive;
+
+  }
   .overlay {
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.13);
     backdrop-filter: blur(10px);
     border-radius: 18px;
     padding: 20px;
