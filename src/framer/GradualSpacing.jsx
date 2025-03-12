@@ -9,7 +9,7 @@ const GradualSpacing = ({ text = "Creative is Joy" }) => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="inset-0 flex items-start justify-center opacity-10 text-[15vw] text: md:text-[23vw] lg:text-[30vw]
+    <div className="inset-0 flex items-start justify-center opacity-10 text-[20vw] text: md:text-[23vw] lg:text-[30vw]
      z-5
     ">
       <AnimatePresence>
@@ -22,7 +22,7 @@ const GradualSpacing = ({ text = "Creative is Joy" }) => {
             exit="hidden"
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="text-center tracking-tight leading-none fontDyna text-[#202020] 
-             sm:text-[20vw] "
+             text-[20vw] "
           >
             {char === " " ? <span>&nbsp;</span> : char}
           </motion.p>

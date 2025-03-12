@@ -6,12 +6,12 @@ import GradualSpacing from "../framer/GradualSpacing";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen flex flex-col items-center justify-between text-center  text-black bg-gradient-to-b from-[#faf6f2] via-[#e8d7f1] to-[#c2e9fb] rounded-t-3xl m-8" id="home">
+    <section className="min-h-[450px] sm:min-h-[600px] md:min-h-[100vh] md:pt-0 pt-10 flex flex-col items-center justify-between text-center  text-black bg-gradient-to-b from-[#faf6f2] via-[#e8d7f1] to-[#c2e9fb] rounded-t-3xl m-8 " id="home">
 <div>
 <div className="z-[-10] flex-col items-center justify-center "><GradualSpacing>Creative is joy</GradualSpacing></div>
 
       <motion.h1
-        className="font-bold text-[#202020] text-5xl md:text-7xl lg:text-9xl md:overlay z-10"
+        className="font-bold text-[#202020] text-6xl md:text-7xl lg:text-9xl md:overlay z-10"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -35,7 +35,7 @@ const HeroSection = () => {
     to="projects"
     smooth={true}
     duration={900} // Adjusts scroll speed (800ms)
-    className="m-10  px-6 py-3 bg-white/20 backdrop-blur-lg rounded-[18px]  text-[#60bbe6] font-semibold shadow-md hover:text-gray-400  hover:bg-[#60bbe6] transition-all cursor-pointer"
+    className="m-10  px-6 py-3 bg-white/20 backdrop-blur-lg rounded-[18px]  text-[#60bbe6] font-semibold shadow-md hover:text-gray-400  hover:bg-[#60bbe6] transition-all cursor-pointer "
   >
     View My Work
   </Link>
