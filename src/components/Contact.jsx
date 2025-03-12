@@ -2,25 +2,75 @@
 import { motion } from "framer-motion";
 
 const Contact = () => {
-    return (
-      <section id="contact" className="py-20 bg-gray-900 text-white text-center">
-        <h2 className="text-4xl font-bold mb-6">Get in Touch</h2>
-        <a href="mailto:your.email@example.com" className="text-blue-400 text-lg underline hover:text-blue-500">
-          your.email@example.com
-        </a>
-        <br></br>
-        <motion.button
-  whileHover={{ scale: 1.1, rotate: 3, backgroundColor: "#3B82F6" }}
-  whileTap={{ scale: 0.9, rotate: -3 }}
-  className="px-6 py-3 mt-2 bg-blue-500 rounded-lg text-white font-semibold"
+  return (
+    <section id="contact" className="py-40 text-white text-center relative ">
+    <div className="z-100 bg-gradient-to-br from-black via-[#1a1a2e] to-[#16213e]
+    p-5
+">
+      <motion.div
+        className="absolute top-6 left-6 text-xl font-bold text-gray-300"
+        initial={{ opacity: 0, x: -50, rotateY: 90 }}
+        animate={{ opacity: 1, x: 0, rotateY: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+      >
+        <motion.span
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1.2 }}
+  transition={{
+    duration: 2, // Slower animation
+    repeat: Infinity,
+    repeatType: "reverse",
+    ease: "easeInOut",
+  }}
+  className="text-transparent bg-clip-text bg-gradient-to-b from-[#FAF6F2] via-[#E8D7F1] to-[#C2E9FB]"
 >
-  Let's Connect
-</motion.button>
+  Krishnakumar S
+</motion.span>
+      </motion.div>
 
+      {/* Title Animation */}
+      <motion.h2
+        className="text-4xl font-semibold mb-8 tracking-tight"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        Contact Me
+      </motion.h2>
 
-      </section>
-    );
-  };
-  
-  export default Contact;
-  
+      {/* Contact Info */}
+      <motion.div
+        className="max-w-lg mx-auto space-y-4 text-lg"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <a
+          href="mailto:krishnakumars0101@gmail.com"
+          className="block text-gray-400 hover:text-white transition"
+        >
+          Slide into My Inbox →
+        </a>
+        <a
+          href="https://github.com/kriskris-27"
+          className="block text-gray-400 hover:text-white transition"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/krishnakumar-s-474b86257/"
+          className="block text-gray-400 hover:text-white transition"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
