@@ -6,7 +6,7 @@ import GradualSpacing from "../framer/GradualSpacing";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[450px] sm:min-h-[600px] md:min-h-[100vh] md:pt-0 pt-10 flex flex-col items-center justify-between text-center  text-black bg-gradient-to-b from-[#faf6f2] via-[#e8d7f1] to-[#c2e9fb] rounded-t-3xl m-8 " id="home">
+    <section className="min-h-[550px] sm:min-h-[650px] md:min-h-[100vh] md:pt-0 pt-10 flex flex-col items-center justify-between text-center  text-black bg-gradient-to-b from-[#faf6f2] via-[#e8d7f1] to-[#c2e9fb] rounded-t-3xl m-8 " id="home">
 <div>
 <div className="z-[-10] flex-col items-center justify-center "><GradualSpacing>Creative is joy</GradualSpacing></div>
 
