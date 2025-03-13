@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { AuroraText } from "./magicui/aurora-text";
 
 const Contact = () => {
   return (
@@ -67,7 +68,10 @@ const Contact = () => {
   }}
   className="text-transparent bg-clip-text bg-gradient-to-b from-[#FAF6F2] via-[#E8D7F1] to-[#C2E9FB]"
 >
-  Krishnakumar S
+    
+  <AuroraText className="text-2xl lg:text-[5rem]">
+        Krishnakumar S
+    </AuroraText>
 </motion.span>
       </motion.div>
       </div>

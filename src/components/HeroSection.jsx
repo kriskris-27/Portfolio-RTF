@@ -12,13 +12,13 @@ const HeroSection = () => {
 <div className="z-[-10] flex-col items-center justify-center"><GradualSpacing>Creative is joy</GradualSpacing></div>
 
 <motion.h1
-  className="font-bold text-[#202020] text-6xl md:text-7xl lg:text-7xl md:overlay z-10 pt-5 sm:p-2 md:p-0 lg:p-0"
+  className="font-bold text-[#202020] text-5xl md:text-7xl lg:text-7xl md:overlay z-10 pt-5 sm:p-2 md:p-0 lg:p-0"
   initial={{ opacity: 0, y: -50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
 >
   Hi, I'm{" "}
-  <AuroraText className="text-6xl md:text-7xl lg:text-[15rem]">
+  <AuroraText className="text-5xl lg:text-[5rem]">
     Kris
   </AuroraText>
 </motion.h1>
