@@ -69,7 +69,7 @@ const Contact = () => {
   className="text-transparent bg-clip-text bg-gradient-to-b from-[#FAF6F2] via-[#E8D7F1] to-[#C2E9FB]"
 >
     
-  <AuroraText className="text-2xl lg:text-[5rem]">
+  <AuroraText className="text-2xl lg:text-3xl">
         Krishnakumar S
     </AuroraText>
 </motion.span>
