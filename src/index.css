@@ -21,7 +21,29 @@ body {
     border-radius: 18px;
     padding: 20px;
   }
-
+  
+  .spinning-text {
+    animation: spin linear infinite;
+    animation-duration: 40s; /* Adjust the spin speed */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinning-text.reverse {
+    animation-direction: reverse;
+  }
+  
+  .letter {
+    transform-origin: center;
+  }
+  
   :root {
     --background: oklch(1 0 0);
     --foreground: oklch(0.145 0 0);

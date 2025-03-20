@@ -3,13 +3,16 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import GradualSpacing from "../framer/GradualSpacing";
 import { AuroraText } from "./magicui/aurora-text";
-
+import SpinningText from "@/framer/Spinningtext";
 
 const HeroSection = () => {
   return (
     <section className="min-h-[620px] sm:min-h-[720px] sm:m-8 md:min-h-[100vh] md:pt-0 pt-10 flex flex-col items-center justify-between text-center  text-black bg-gradient-to-b from-[#faf6f2] via-[#e8d7f1] to-[#c2e9fb] rounded-t-3xl m-5 " id="home">
 <div>
 <div className="z-[-10] flex-col items-center justify-center"><GradualSpacing>Creative is joy</GradualSpacing></div>
+{/* <div className="absolute flex justify-center items-center  text-neutral-600 top-[-1] right-15">
+      <SpinningText children="Full stack • Bike • Gym • Code •" duration={20} />
+    </div> */}
 
 <motion.h1
   className="font-bold text-[#202020] text-5xl md:text-7xl lg:text-7xl md:overlay z-10 pt-5 sm:p-2 md:p-0 lg:p-0"

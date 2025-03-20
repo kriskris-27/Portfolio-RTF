@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import proimg1 from "../assets/images/image.png";
 import proimg2 from "../assets/images/image2.png";
 import proimg3 from "../assets/images/image3.png";
+import proimg4 from "../assets/images/image4.png";
+
 import TypingEffect from "../framer/TypingEffect";
 
 
@@ -21,11 +23,18 @@ const projects = [
     descp:"Glow up your gains—track, log, and flex on ‘em"
   },
   {
+    title: "Tribe - Cafe (Freelance)",
+    image: proimg4,
+    preview: "https://tribe-by-v.vercel.app/",
+    descp:"A vibrant fusion drink brand website with a tribal aesthetic."
+  },
+  {
     title: "Musewords - Tech Blogs",
     image: proimg3,
     preview: "https://musewords.vercel.app/",
     descp:"Fresh takes on the latest tech. Stay ahead, stay hyped."
   },
+  
 ];
 // console.log(proimg1, proimg2, proimg3);
 console.log(projects.title);
