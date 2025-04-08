@@ -36,7 +36,7 @@ const projects = [
     image: proimg4,
     preview: "https://tribe-by-v.vercel.app/",
     descp:"A vibrant fusion drink brand website with a tribal aesthetic.",
-    techstack:"Tech Stack: React · Three.js · Tailwind CSS · Vite · TypeScript | Tools: R3F, Framer Motion, GSAP, @shadcn/ui"
+    techstack:"Tech Stack: React · Three.js · Tailwind CSS · Vite · JavaScript | Tools: R3F, Framer Motion, GSAP, @shadcn/ui"
   }
   
 ];
