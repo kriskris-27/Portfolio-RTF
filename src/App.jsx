@@ -13,6 +13,8 @@ import Layout from "./framer/Layout";
 import './index.css'
 
 import HoverGraph from "./framer/HoverGraph";
+import About from "./components/Aboutme";
+import SkillsSection from "./components/Skillsection";
 
 
 function App() {
@@ -40,7 +42,9 @@ function App() {
       <Navbar />
       <HeroSection />
       <HoverGraph/>
+      <About/>
       <Projects />
+      <SkillsSection/>
       <HoverGraph/>
       <Contact />
       <Footer />

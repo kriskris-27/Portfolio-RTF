@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "projects", "contact"];
+      const sections = ["home", "projects","skills", "contact"];
       let currentSection = "";
 
       sections.forEach((section) => {
@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       {/* Menu Items */}
       <div className="flex items-center gap-2">
-        {["Home", "Projects", "Contact"].map((item, index) => {
+        {["Home", "Projects","Skills", "Contact"].map((item, index) => {
           const sectionId = item.toLowerCase();
           return (
             <motion.div key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>

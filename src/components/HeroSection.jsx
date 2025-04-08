@@ -35,7 +35,9 @@ const HeroSection = () => {
         transition={{ delay: 0.5, duration: 1 }}
         
       >
-        Fullstack Developer | Tech & Digital Marketing Enthusiast
+        Aspiring Full-Stack Dev | Building Web Apps | MERN & beyond | Learning By Doing
+
+
       </motion.p>
 
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>

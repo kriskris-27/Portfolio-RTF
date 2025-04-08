@@ -9,7 +9,7 @@ text-center text-white">
 
     {/* <ScreenFitText/> */}
        
-    <VelocityText/>
+    {/* <VelocityText/> */}
     <p>&copy; 2025 Imkris. All rights reserved.</p>
     
       </footer>
