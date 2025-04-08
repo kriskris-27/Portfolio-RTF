@@ -2,27 +2,21 @@
 import React from "react";
 import { skills } from "../data/skills";
 import SkillIcon from "../assets/skillIcon";
-import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const SkillsSection = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <div id="skills">
       <motion.h2
-        ref={ref}
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
         className="text-2xl md:text-4xl font-bold my-4 text-center block"
       >
         Skills
       </motion.h2>
-      <section  className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 sm:p-6 text-white ">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 sm:p-6 text-white ">
         {skills.map((skill) => (
           <div
             key={skill.category}
